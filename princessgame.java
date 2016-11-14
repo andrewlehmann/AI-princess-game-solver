@@ -16,7 +16,7 @@ public class Solution {
             }
             if (grid[i].contains("p"))  {
                 princessLocation[0] = i;
-                princessLocation[1] = grid[i].indexOf("p"); //get indicesfor location of princess
+                princessLocation[1] = grid[i].indexOf("p"); //get indices for location of princess
             }
 
 
@@ -26,19 +26,19 @@ public class Solution {
             int vertical = meLocation[1] - princessLocation[1];     //find vertical distance
             if (horizontal < 0)                                     //print RIGHT once for every space I need
                 for (int i = horizontal; i < 0; i++)    {           //to move right
-                    System.out.println("RIGHT");
+                    System.out.println("LEFT");
                 }
             if (horizontal > 0) {
                 for (int i = horizontal; i > 0; i--)                //ditto for left
-                    System.out.println("LEFT");
+                    System.out.println("RIGHT");
             }
             if (vertical < 0)
                 for (int i = vertical; i < 0; i++)    {             //ditto for down
-                    System.out.println("DOWN");
+                    System.out.println("UP");
                 }
             if (vertical > 0) {
                 for (int i = vertical; i > 0; i--)                  //ditto for up
-                    System.out.println("UP");
+                    System.out.println("DOWN");
             }
 
         }
